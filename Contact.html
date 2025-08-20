@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .contact-section {
+      background: #E0F7F6;
+      border-radius: 26px;
+      padding: 3rem 3rem 3.5rem;
+      max-width: 700px;
+      margin: 2.5rem auto 1.5rem;
+      box-shadow: 0 20px 30px rgba(0, 128, 128, 0.15);
+    }
+    /* To show custom validation messages in red below inputs */
+    input:invalid,
+    textarea:invalid {
+      border-color: #30cfcf;
+      box-shadow: 0 0 10px #30cfcf;
+    }
+
+    /* Contact & Links Section */
+    .contact-links {
+      background: #E0F7F6;
+      border-radius: 26px;
+      max-width: 700px;
+      margin: 1.5rem auto 3.5rem;
+      padding: 2rem 2.5rem;
+      box-shadow: 0 20px 30px rgba(0, 128, 128, 0.15);
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+      color: #004D40;
+    }
+    .contact-links h2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      color: #00796B;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+    }
+    .contact-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+    }
+    .contact-links li {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    .contact-links a {
+      color: #00796B;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      user-select: none;
+    }
+    .contact-links a:hover,
+    .contact-links a:focus {
+      color: #004D40;
+      text-decoration: underline;
+      outline: none;
+    }
+    /* Simple icons using emoji - you can replace with SVG if desired */
+    .icon {
+      font-size: 1.3rem;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-top" aria-label="Page header">
+    <div class="nav-arrows" aria-label="Page navigation arrows">
+      <button class="nav-arrow back-arrow" aria-label="Go to Projects page" onclick="location.href='projects.html'">&#x25C0;</button>
+      <button class="nav-arrow forward-arrow" aria-label="No next page" disabled>&#x25B6;</button>
+    </div>
+    <h1>CONTACT</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="contact-section" aria-label="Contact form">
+    <h2 class="text-center">Contact Me</h2>
+    <form action="mailto:sarathy240506@email.com" method="POST" enctype="text/plain" novalidate>
+      <label for="name">Name <span aria-hidden="true" style="color: #00796B;">*</span></label>
+      <input type="text" id="name" name="name" placeholder="Your full name" minlength="3" maxlength="50" required aria-required="true" autocomplete="name"/>
+
+      <label for="contact">Contact Number <span aria-hidden="true" style="color: #00796B;">*</span></label>
+      <input type="tel" id="contact" name="contact" pattern="^\+?[0-9\s\-]{7,15}$" placeholder="e.g. +1234567890" required aria-required="true" autocomplete="tel" title="Valid phone number with digits, spaces, dashes, +"/>
+
+      <label for="email">Email <span aria-hidden="true" style="color: #00796B;">*</span></label>
+      <input type="email" id="email" name="email" placeholder="your.email@example.com" required aria-required="true" autocomplete="email" />
+
+      <label for="message">Message <span aria-hidden="true" style="color: #00796B;">*</span></label>
+      <textarea id="message" name="message" minlength="10" placeholder="Write your message here..." required aria-required="true" rows="5"></textarea>
+
+      <input type="submit" value="Send Message" />
+    </form>
+  </section>
+
+  <section class="contact-links" aria-label="Contact and social links">
+    <h2>Contact & Links</h2>
+    <ul>
+      <li>
+        <a href="https://www.linkedin.com/in/sarathy-chandramohan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+          <span class="icon">🔗</span> LinkedIn
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/Sarathychandramohan" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+          <span class="icon">🐙</span> GitHub
+        </a>
+      </li>
+      <li>
+        <a href="https://leetcode.com/u/Sarathy_C/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode Profile">
+          <span class="icon">🧩</span> LeetCode
+        </a>
+      </li>
+      <li>
+        <a href="mailto:sarathy240506@email.com" aria-label="Send Email">
+          <span class="icon">📧</span> Email
+        </a>
+      </li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 My Portfolio</p>
+</footer>
+</body>
+</html>

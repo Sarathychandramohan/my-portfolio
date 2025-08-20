@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home - My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {
+      text-align: center;
+      padding-top: 0;
+    }
+    .profile-container {
+      max-width: 720px;
+      margin: 2rem auto 0;
+      background: #E0F7F6;
+      border-radius: 24px;
+      padding: 3rem 3rem 3.5rem;
+      box-shadow: 0 14px 25px rgba(0, 128, 128, 0.2);
+      transition: box-shadow 0.3s ease;
+    }
+    .profile-container:hover {
+      box-shadow: 0 20px 40px rgba(0, 128, 128, 0.3);
+    }
+    .intro-text {
+      font-size: 1.3rem;
+      font-weight: 500;
+      max-width: 680px;
+      margin: 0 auto 2.7rem;
+      color: #004D40;
+      text-align: justify;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-top" aria-label="Page header" style="padding-left: 1rem; padding-top: 0.8rem;">
+    <div class="nav-arrows" aria-label="Page navigation arrows" style="display: flex; gap: 0.8rem;">
+      <button class="nav-arrow back-arrow" aria-label="No previous page" disabled>&#x25C0;</button>
+      <button class="nav-arrow forward-arrow" aria-label="Go to About page" onclick="location.href='about.html'">&#x25B6;</button>
+    </div>
+    <h1>SARATHY C</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="profile-container" aria-label="Profile overview">
+    <!-- Image of the profile picture -->
+    <img src="IMG_7077.jpg" alt="Profile picture of Sarathy" class="profile-image">
+    <p class="intro-text">
+      Hello! I'm Sarathy, a passionate web developer and AI & DS student at KPR Institute of Engineering & Technology. I specialize in creating elegant, intuitive, and high-performance web solutions to real-world challenges.
+    </p>
+
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 My Portfolio</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects - My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* New styles for the horizontal projects section to override defaults */
+    .projects-section {
+      background: #E0F7F6;
+      border-radius: 26px;
+      padding: 3rem 3rem 3.5rem;
+      /* Removed max-width to use the full screen space */
+      width: 100%;
+      margin: 2rem auto 3.5rem;
+      box-shadow: 0 20px 30px rgba(0, 128, 128, 0.15);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-top" aria-label="Page header">
+    <div class="nav-arrows" aria-label="Page navigation arrows">
+      <button class="nav-arrow back-arrow" aria-label="Go to About page" onclick="location.href='about.html'">&#x25C0;</button>
+      <button class="nav-arrow forward-arrow" aria-label="Go to Contact page" onclick="location.href='contact.html'">&#x25B6;</button>
+    </div>
+    <h1>MY PROJECTS</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="projects-section" aria-label="Portfolio projects">
+    <h2 class="text-center">My Projects</h2>
+    <!-- The new container for horizontal layout -->
+    <div class="projects-list-horizontal">
+
+      <details class="project-card">
+        <summary>Expense Management System</summary>
+        <p class="project-summary">
+          Developed an efficient Expense Management System enabling users to track and analyze expenditures dynamically.
+        </p>
+        <div class="project-details">
+          <p><strong>Programming Languages:</strong> Java</p>
+          <p><strong>Database:</strong> MySQL</p>
+          <p><strong>Frameworks:</strong> Java Servlets, Spring Boot</p>
+          <p><strong>Frontend:</strong> HTML5, CSS3</p>
+          <p><strong>Work:</strong> Designed backend logic for expense tracking, user authentication, and dynamic reports with charts for visualizing spending patterns.</p>
+        </div>
+      </details>
+
+      <details class="project-card">
+        <summary>Plan Generator Website</summary>
+        <p class="project-summary">
+          Created an interactive Plan Generator web application for personalized task planning.
+        </p>
+        <div class="project-details">
+          <p><strong>Programming Languages:</strong> Java (Backend), JavaScript (Frontend)</p>
+          <p><strong>Database:</strong> PostgreSQL</p>
+          <p><strong>Frameworks:</strong> Spring Boot (Backend), React.js (Frontend)</p>
+          <p><strong>Server:</strong> Apache Tomcat</p>
+          <p><strong>Work:</strong> Developed RESTful APIs for plan management; implemented responsive UI with React for seamless user experience and dynamic plan creation.</p>
+        </div>
+      </details>
+
+      <details class="project-card">
+        <summary>Cybersecurity Lab Setup</summary>
+        <p class="project-summary">
+          Configured a dedicated cybersecurity lab environment for hands-on penetration testing and learning.
+        </p>
+        <div class="project-details">
+          <p><strong>Operating Systems:</strong> Kali Linux, Metasploitable</p>
+          <p><strong>Tools:</strong> Metasploit, Nmap, Wireshark</p>
+          <p><strong>Work:</strong> Set up virtualized lab environment; demonstrated penetration testing methods; documented vulnerabilities and mitigation techniques.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 My Portfolio</p>
+</footer>
+</body>
+</html>
